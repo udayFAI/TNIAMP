@@ -1,0 +1,11 @@
+//
+//  Config_Production.xcconfig
+//  wrd
+//
+//  Created by Kosuru Uday Saikumar on 08/01/24.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+Base_URL = Production
