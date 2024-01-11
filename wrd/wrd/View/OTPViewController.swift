@@ -12,6 +12,8 @@ class OTPViewController: UIViewController {
     @IBOutlet weak var confirmButtonOutlet: UIButton!
     @IBOutlet weak var otpTextField: DNMeterialTextField!
     
+    var viewModel = OTPViewModel()
+    var isStatusOTP = false
     override func viewDidLoad() {
         super.viewDidLoad()
         otpTextField.delegate = self
@@ -20,15 +22,16 @@ class OTPViewController: UIViewController {
     }
     
     @IBAction func resendHandler(_ sender: Any) {
-        AlertHelper.showAlert(title: StaticString.alertTitle, message: "New 4 digit OTP has been sent to your 8465969964 mobile number", viewController: self)
+        showLoginVC()
     }
     
     
     @IBAction func confirmHandler(_ sender: Any) {
-        guard let text = otpTextField.text, !text.isEmpty else {
+        guard let text = otpTextField.text, !text.isEmpty, isStatusOTP else {
             AlertHelper.showAlert(title: StaticString.alertTitle, message: "Please enter 4 digit OTP", viewController: self)
             return  }
         // TODO: API Manager.
+        AppUserDefaults.SharedInstance.isStatusLoginOut = true
         showDashboardVC()
     }
     
@@ -48,21 +51,24 @@ class OTPViewController: UIViewController {
 extension OTPViewController: UITextFieldDelegate {
     
     func textFieldDidEndEditing(_ textField: UITextField) {
-//        if let text = otpTextField.text, viewModel.validate.numberValidation(text: text), viewModel.validate.mobileNumberCount(text: text), viewModel.validate.isValidMobileNumber(text: text) {
-//            PrintLog.success("Success")
-//        } else if let age = mobileTextField.text, age.count <= 0 {
-//            PrintLog.error("Failure")
-//        } else {
-//            PrintLog.error("Failure")
-//        }
+        if let text = otpTextField.text?.trimmed(), viewModel.validate.numberValidation(text: text), let otp = Int(text), viewModel.validate.otpTextCount(text: text), Set(String(otp)).count != 1 {
+            isStatusOTP = true
+            PrintLog.success("OTP Success")
+        } else if let age = otpTextField.text, age.count <= 0 {
+            isStatusOTP = false
+            PrintLog.error("OTP Failure")
+        } else {
+            isStatusOTP = false
+            PrintLog.error("OTP Failure")
+        }
     }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        let currentText = textField.text ?? ""
+        let currentText = textField.text?.trimmed() ?? ""
         let newText = (currentText as NSString).replacingCharacters(in: range, with: string)
         if newText.isEmpty {
-            PrintLog.error("Failure")
+            PrintLog.error("OTP Failure")
         }
-        return true // viewModel.textFieldCharactersValidate(text: newText)
+        return viewModel.validate.calculateTotalDigits(text: newText, maxLength: 4)
     }
 }

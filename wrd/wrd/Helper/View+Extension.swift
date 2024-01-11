@@ -34,8 +34,8 @@ extension UIView {
 extension UIView {
 
     // Adds a basic drop shadow to the view.
-    func addDropShadow(color: UIColor = .black, opacity: Float = 0.5, offset: CGSize = CGSize(width: 0, height: 2), radius: CGFloat = 4, cornerRadius: CGFloat) {
-        layer.masksToBounds = true
+    func addDropShadow(color: UIColor = .black, opacity: Float = 0.5, offset: CGSize = CGSize(width: 0, height: 2), radius: CGFloat = 4, cornerRadius: CGFloat, bounds: Bool = false) {
+        layer.masksToBounds = bounds
         layer.shadowColor = color.cgColor
         layer.shadowOpacity = opacity
         layer.shadowOffset = offset

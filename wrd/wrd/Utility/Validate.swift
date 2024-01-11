@@ -27,4 +27,16 @@ class Validate: NSObject {
         let characterSet = CharacterSet(charactersIn: text)
         return allowedCharacters.isSuperset(of: characterSet) && text.count <= maxLength
     }
+    
+    // MARK: - OTP
+    // MARK: - OTP
+    func otpTextCount(text: String) -> Bool {
+        return text.count == 4
+    }
+    
+    func calculateTotalDigits(text: String, maxLength : Int = 4) -> Bool {
+        let allowedCharacters = CharacterSet.decimalDigits
+        let characterSet = CharacterSet(charactersIn: text)
+        return allowedCharacters.isSuperset(of: characterSet) && text.count <= maxLength
+    }
 }

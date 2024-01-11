@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		331053D307B3BE1F04CFA7EE /* Pods_wrd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D5DEE8A304B3B5A128A2372 /* Pods_wrd.framework */; };
 		353829A32B4D12F3002B9CF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353829A22B4D12F3002B9CF0 /* AppDelegate.swift */; };
 		353829A52B4D12F3002B9CF0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353829A42B4D12F3002B9CF0 /* SceneDelegate.swift */; };
 		353829AD2B4D12F3002B9CF0 /* wrd.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 353829AB2B4D12F3002B9CF0 /* wrd.xcdatamodeld */; };
@@ -16,8 +17,6 @@
 		353829C72B4D12F4002B9CF0 /* wrdUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353829C62B4D12F4002B9CF0 /* wrdUITests.swift */; };
 		353829C92B4D12F4002B9CF0 /* wrdUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353829C82B4D12F4002B9CF0 /* wrdUITestsLaunchTests.swift */; };
 		353829E32B4D133D002B9CF0 /* WRD+Development.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353829D82B4D133D002B9CF0 /* WRD+Development.swift */; };
-		353829E42B4D133D002B9CF0 /* Config_Production.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 353829D92B4D133D002B9CF0 /* Config_Production.xcconfig */; };
-		353829E52B4D133D002B9CF0 /* Config_Development.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 353829DA2B4D133D002B9CF0 /* Config_Development.xcconfig */; };
 		353829E62B4D133D002B9CF0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353829DC2B4D133D002B9CF0 /* Constants.swift */; };
 		353829E72B4D133D002B9CF0 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353829DD2B4D133D002B9CF0 /* UIColor+Extension.swift */; };
 		353829E82B4D133D002B9CF0 /* DNMeterialTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353829DE2B4D133D002B9CF0 /* DNMeterialTextField.swift */; };
@@ -33,6 +32,30 @@
 		35382A012B4D1347002B9CF0 /* Validate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353829F72B4D1347002B9CF0 /* Validate.swift */; };
 		35382A022B4D1347002B9CF0 /* PrintLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353829F82B4D1347002B9CF0 /* PrintLog.swift */; };
 		35382A032B4D1347002B9CF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 353829FA2B4D1347002B9CF0 /* Main.storyboard */; };
+		35382A052B4D189E002B9CF0 /* OTPViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35382A042B4D189E002B9CF0 /* OTPViewModel.swift */; };
+		35382A072B4D1E6C002B9CF0 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35382A062B4D1E6C002B9CF0 /* InfoViewController.swift */; };
+		35382A0A2B4D1FA4002B9CF0 /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35382A082B4D1FA4002B9CF0 /* InfoTableViewCell.swift */; };
+		35382A0B2B4D1FA4002B9CF0 /* InfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35382A092B4D1FA4002B9CF0 /* InfoTableViewCell.xib */; };
+		356AE5042B4D602A00F6B0E7 /* DropDownView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 356AE5032B4D602A00F6B0E7 /* DropDownView.xib */; };
+		35B96B962B4EC27A008D80C0 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B96B932B4EC27A008D80C0 /* Camera.swift */; };
+		35B96B972B4EC27A008D80C0 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B96B942B4EC27A008D80C0 /* LocationManager.swift */; };
+		35B96B9B2B4ED765008D80C0 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B96B992B4ED765008D80C0 /* CalendarViewController.swift */; };
+		35B96B9C2B4ED765008D80C0 /* CalendarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35B96B9A2B4ED765008D80C0 /* CalendarViewController.xib */; };
+		35B96B9E2B4ED8D7008D80C0 /* PopUpPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B96B9D2B4ED8D7008D80C0 /* PopUpPresentationController.swift */; };
+		35D35BF82B4D2F30008D6662 /* PopOver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D35BF72B4D2F30008D6662 /* PopOver.swift */; };
+		35D35BFB2B4D3D10008D6662 /* DepartementCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D35BF92B4D3D10008D6662 /* DepartementCollectionViewCell.swift */; };
+		35D35BFC2B4D3D10008D6662 /* DepartementCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35D35BFA2B4D3D10008D6662 /* DepartementCollectionViewCell.xib */; };
+		35D35BFE2B4D3F25008D6662 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D35BFD2B4D3F25008D6662 /* DashboardViewModel.swift */; };
+		35D35C002B4D5375008D6662 /* DepartmentDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D35BFF2B4D5375008D6662 /* DepartmentDetailsViewController.swift */; };
+		35D35C032B4D5816008D6662 /* DropDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D35C022B4D5816008D6662 /* DropDownView.swift */; };
+		35D35C122B4D5A91008D6662 /* DropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D35C092B4D5A91008D6662 /* DropDown.swift */; };
+		35D35C132B4D5A91008D6662 /* DropDownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D35C0A2B4D5A91008D6662 /* DropDownCell.swift */; };
+		35D35C142B4D5A91008D6662 /* DropDown+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D35C0B2B4D5A91008D6662 /* DropDown+Appearance.swift */; };
+		35D35C152B4D5A91008D6662 /* DPDKeyboardListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D35C0D2B4D5A91008D6662 /* DPDKeyboardListener.swift */; };
+		35D35C162B4D5A91008D6662 /* DPDConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D35C0E2B4D5A91008D6662 /* DPDConstants.swift */; };
+		35D35C172B4D5A91008D6662 /* DPDUIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D35C0F2B4D5A91008D6662 /* DPDUIView+Extension.swift */; };
+		35D35C182B4D5A91008D6662 /* DropDownCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35D35C112B4D5A91008D6662 /* DropDownCell.xib */; };
+		35D516EB2B4F9D0100A6F79D /* AppUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D516EA2B4F9D0100A6F79D /* AppUserDefaults.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,8 +89,6 @@
 		353829C62B4D12F4002B9CF0 /* wrdUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wrdUITests.swift; sourceTree = "<group>"; };
 		353829C82B4D12F4002B9CF0 /* wrdUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wrdUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		353829D82B4D133D002B9CF0 /* WRD+Development.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WRD+Development.swift"; sourceTree = "<group>"; };
-		353829D92B4D133D002B9CF0 /* Config_Production.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Config_Production.xcconfig; sourceTree = "<group>"; };
-		353829DA2B4D133D002B9CF0 /* Config_Development.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Config_Development.xcconfig; sourceTree = "<group>"; };
 		353829DC2B4D133D002B9CF0 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		353829DD2B4D133D002B9CF0 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		353829DE2B4D133D002B9CF0 /* DNMeterialTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNMeterialTextField.swift; sourceTree = "<group>"; };
@@ -83,6 +104,33 @@
 		353829F72B4D1347002B9CF0 /* Validate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validate.swift; sourceTree = "<group>"; };
 		353829F82B4D1347002B9CF0 /* PrintLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrintLog.swift; sourceTree = "<group>"; };
 		353829FB2B4D1347002B9CF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		35382A042B4D189E002B9CF0 /* OTPViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewModel.swift; sourceTree = "<group>"; };
+		35382A062B4D1E6C002B9CF0 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		35382A082B4D1FA4002B9CF0 /* InfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTableViewCell.swift; sourceTree = "<group>"; };
+		35382A092B4D1FA4002B9CF0 /* InfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoTableViewCell.xib; sourceTree = "<group>"; };
+		356AE5032B4D602A00F6B0E7 /* DropDownView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DropDownView.xib; sourceTree = "<group>"; };
+		35B96B932B4EC27A008D80C0 /* Camera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		35B96B942B4EC27A008D80C0 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		35B96B992B4ED765008D80C0 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		35B96B9A2B4ED765008D80C0 /* CalendarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarViewController.xib; sourceTree = "<group>"; };
+		35B96B9D2B4ED8D7008D80C0 /* PopUpPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpPresentationController.swift; sourceTree = "<group>"; };
+		35D35BF72B4D2F30008D6662 /* PopOver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopOver.swift; sourceTree = "<group>"; };
+		35D35BF92B4D3D10008D6662 /* DepartementCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartementCollectionViewCell.swift; sourceTree = "<group>"; };
+		35D35BFA2B4D3D10008D6662 /* DepartementCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DepartementCollectionViewCell.xib; sourceTree = "<group>"; };
+		35D35BFD2B4D3F25008D6662 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		35D35BFF2B4D5375008D6662 /* DepartmentDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartmentDetailsViewController.swift; sourceTree = "<group>"; };
+		35D35C022B4D5816008D6662 /* DropDownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownView.swift; sourceTree = "<group>"; };
+		35D35C092B4D5A91008D6662 /* DropDown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropDown.swift; sourceTree = "<group>"; };
+		35D35C0A2B4D5A91008D6662 /* DropDownCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropDownCell.swift; sourceTree = "<group>"; };
+		35D35C0B2B4D5A91008D6662 /* DropDown+Appearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DropDown+Appearance.swift"; sourceTree = "<group>"; };
+		35D35C0D2B4D5A91008D6662 /* DPDKeyboardListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DPDKeyboardListener.swift; sourceTree = "<group>"; };
+		35D35C0E2B4D5A91008D6662 /* DPDConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DPDConstants.swift; sourceTree = "<group>"; };
+		35D35C0F2B4D5A91008D6662 /* DPDUIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DPDUIView+Extension.swift"; sourceTree = "<group>"; };
+		35D35C112B4D5A91008D6662 /* DropDownCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DropDownCell.xib; sourceTree = "<group>"; };
+		35D516EA2B4F9D0100A6F79D /* AppUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppUserDefaults.swift; sourceTree = "<group>"; };
+		4A94769ED20BBFD94CD0B3AC /* Pods-wrd.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wrd.debug.xcconfig"; path = "Target Support Files/Pods-wrd/Pods-wrd.debug.xcconfig"; sourceTree = "<group>"; };
+		914367A33886B17747A36F58 /* Pods-wrd.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wrd.release.xcconfig"; path = "Target Support Files/Pods-wrd/Pods-wrd.release.xcconfig"; sourceTree = "<group>"; };
+		9D5DEE8A304B3B5A128A2372 /* Pods_wrd.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wrd.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +138,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				331053D307B3BE1F04CFA7EE /* Pods_wrd.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +159,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		334406FB20012CC184938CC1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4A94769ED20BBFD94CD0B3AC /* Pods-wrd.debug.xcconfig */,
+				914367A33886B17747A36F58 /* Pods-wrd.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		353829962B4D12F3002B9CF0 = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +175,8 @@
 				353829BB2B4D12F4002B9CF0 /* wrdTests */,
 				353829C52B4D12F4002B9CF0 /* wrdUITests */,
 				353829A02B4D12F3002B9CF0 /* Products */,
+				334406FB20012CC184938CC1 /* Pods */,
+				822294ADF5DCE9CCF79600B1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -180,6 +240,10 @@
 		353829D62B4D133D002B9CF0 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				35382A082B4D1FA4002B9CF0 /* InfoTableViewCell.swift */,
+				35382A092B4D1FA4002B9CF0 /* InfoTableViewCell.xib */,
+				35D35BF92B4D3D10008D6662 /* DepartementCollectionViewCell.swift */,
+				35D35BFA2B4D3D10008D6662 /* DepartementCollectionViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -188,8 +252,6 @@
 			isa = PBXGroup;
 			children = (
 				353829D82B4D133D002B9CF0 /* WRD+Development.swift */,
-				353829D92B4D133D002B9CF0 /* Config_Production.xcconfig */,
-				353829DA2B4D133D002B9CF0 /* Config_Development.xcconfig */,
 			);
 			path = Confirguration;
 			sourceTree = "<group>";
@@ -197,13 +259,15 @@
 		353829DB2B4D133D002B9CF0 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				35D516EA2B4F9D0100A6F79D /* AppUserDefaults.swift */,
 				353829DC2B4D133D002B9CF0 /* Constants.swift */,
 				353829DD2B4D133D002B9CF0 /* UIColor+Extension.swift */,
-				353829DE2B4D133D002B9CF0 /* DNMeterialTextField.swift */,
 				353829DF2B4D133D002B9CF0 /* String+Extension.swift */,
 				353829E02B4D133D002B9CF0 /* Regex.swift */,
 				353829E12B4D133D002B9CF0 /* AppStoryboard.swift */,
 				353829E22B4D133D002B9CF0 /* View+Extension.swift */,
+				35D35BF72B4D2F30008D6662 /* PopOver.swift */,
+				35B96B9D2B4ED8D7008D80C0 /* PopUpPresentationController.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -211,9 +275,12 @@
 		353829ED2B4D1347002B9CF0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				35B96B982B4ED765008D80C0 /* Calendar */,
 				353829EE2B4D1347002B9CF0 /* ViewController.swift */,
 				353829EF2B4D1347002B9CF0 /* OTPViewController.swift */,
 				353829F02B4D1347002B9CF0 /* DashboardViewController.swift */,
+				35382A062B4D1E6C002B9CF0 /* InfoViewController.swift */,
+				35D35BFF2B4D5375008D6662 /* DepartmentDetailsViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -222,6 +289,8 @@
 			isa = PBXGroup;
 			children = (
 				353829F22B4D1347002B9CF0 /* LoginViewModel.swift */,
+				35382A042B4D189E002B9CF0 /* OTPViewModel.swift */,
+				35D35BFD2B4D3F25008D6662 /* DashboardViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -229,6 +298,9 @@
 		353829F32B4D1347002B9CF0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				353829DE2B4D133D002B9CF0 /* DNMeterialTextField.swift */,
+				35D35C062B4D5A55008D6662 /* DropDownModule */,
+				35D35C012B4D576E008D6662 /* DropDownTextField */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -243,6 +315,8 @@
 		353829F52B4D1347002B9CF0 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				35B96B932B4EC27A008D80C0 /* Camera.swift */,
+				35B96B942B4EC27A008D80C0 /* LocationManager.swift */,
 				353829F62B4D1347002B9CF0 /* AlertHelper.swift */,
 				353829F72B4D1347002B9CF0 /* Validate.swift */,
 				353829F82B4D1347002B9CF0 /* PrintLog.swift */,
@@ -258,6 +332,70 @@
 			path = Storyboard;
 			sourceTree = "<group>";
 		};
+		35B96B982B4ED765008D80C0 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				35B96B992B4ED765008D80C0 /* CalendarViewController.swift */,
+				35B96B9A2B4ED765008D80C0 /* CalendarViewController.xib */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		35D35C012B4D576E008D6662 /* DropDownTextField */ = {
+			isa = PBXGroup;
+			children = (
+				35D35C022B4D5816008D6662 /* DropDownView.swift */,
+				356AE5032B4D602A00F6B0E7 /* DropDownView.xib */,
+			);
+			path = DropDownTextField;
+			sourceTree = "<group>";
+		};
+		35D35C062B4D5A55008D6662 /* DropDownModule */ = {
+			isa = PBXGroup;
+			children = (
+				35D35C0C2B4D5A91008D6662 /* helpers */,
+				35D35C102B4D5A91008D6662 /* resources */,
+				35D35C082B4D5A91008D6662 /* src */,
+			);
+			path = DropDownModule;
+			sourceTree = "<group>";
+		};
+		35D35C082B4D5A91008D6662 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				35D35C092B4D5A91008D6662 /* DropDown.swift */,
+				35D35C0A2B4D5A91008D6662 /* DropDownCell.swift */,
+				35D35C0B2B4D5A91008D6662 /* DropDown+Appearance.swift */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		35D35C0C2B4D5A91008D6662 /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				35D35C0D2B4D5A91008D6662 /* DPDKeyboardListener.swift */,
+				35D35C0E2B4D5A91008D6662 /* DPDConstants.swift */,
+				35D35C0F2B4D5A91008D6662 /* DPDUIView+Extension.swift */,
+			);
+			path = helpers;
+			sourceTree = "<group>";
+		};
+		35D35C102B4D5A91008D6662 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				35D35C112B4D5A91008D6662 /* DropDownCell.xib */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		822294ADF5DCE9CCF79600B1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D5DEE8A304B3B5A128A2372 /* Pods_wrd.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -265,9 +403,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 353829CC2B4D12F4002B9CF0 /* Build configuration list for PBXNativeTarget "wrd" */;
 			buildPhases = (
+				446D7FC6785A1E5DB48CF308 /* [CP] Check Pods Manifest.lock */,
 				3538299B2B4D12F3002B9CF0 /* Sources */,
 				3538299C2B4D12F3002B9CF0 /* Frameworks */,
 				3538299D2B4D12F3002B9CF0 /* Resources */,
+				0353A01ABBE40A3A6F5E1069 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -363,10 +503,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				353829B22B4D12F3002B9CF0 /* LaunchScreen.storyboard in Resources */,
-				353829E42B4D133D002B9CF0 /* Config_Production.xcconfig in Resources */,
+				35382A0B2B4D1FA4002B9CF0 /* InfoTableViewCell.xib in Resources */,
+				356AE5042B4D602A00F6B0E7 /* DropDownView.xib in Resources */,
+				35D35BFC2B4D3D10008D6662 /* DepartementCollectionViewCell.xib in Resources */,
+				35B96B9C2B4ED765008D80C0 /* CalendarViewController.xib in Resources */,
+				35D35C182B4D5A91008D6662 /* DropDownCell.xib in Resources */,
 				353829AF2B4D12F3002B9CF0 /* Assets.xcassets in Resources */,
 				35382A032B4D1347002B9CF0 /* Main.storyboard in Resources */,
-				353829E52B4D133D002B9CF0 /* Config_Development.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,29 +529,90 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0353A01ABBE40A3A6F5E1069 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-wrd/Pods-wrd-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-wrd/Pods-wrd-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-wrd/Pods-wrd-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		446D7FC6785A1E5DB48CF308 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-wrd-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3538299B2B4D12F3002B9CF0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35B96B9B2B4ED765008D80C0 /* CalendarViewController.swift in Sources */,
 				353829E72B4D133D002B9CF0 /* UIColor+Extension.swift in Sources */,
+				35D35C032B4D5816008D6662 /* DropDownView.swift in Sources */,
+				35D35C142B4D5A91008D6662 /* DropDown+Appearance.swift in Sources */,
+				35D35C152B4D5A91008D6662 /* DPDKeyboardListener.swift in Sources */,
+				35D35BF82B4D2F30008D6662 /* PopOver.swift in Sources */,
 				353829EA2B4D133D002B9CF0 /* Regex.swift in Sources */,
 				353829E92B4D133D002B9CF0 /* String+Extension.swift in Sources */,
 				353829FF2B4D1347002B9CF0 /* LoginViewModel.swift in Sources */,
 				353829E82B4D133D002B9CF0 /* DNMeterialTextField.swift in Sources */,
 				353829AD2B4D12F3002B9CF0 /* wrd.xcdatamodeld in Sources */,
+				35D35C122B4D5A91008D6662 /* DropDown.swift in Sources */,
 				353829E32B4D133D002B9CF0 /* WRD+Development.swift in Sources */,
+				35D516EB2B4F9D0100A6F79D /* AppUserDefaults.swift in Sources */,
+				35D35C132B4D5A91008D6662 /* DropDownCell.swift in Sources */,
+				35D35C172B4D5A91008D6662 /* DPDUIView+Extension.swift in Sources */,
+				35B96B972B4EC27A008D80C0 /* LocationManager.swift in Sources */,
 				353829FE2B4D1347002B9CF0 /* DashboardViewController.swift in Sources */,
 				353829A32B4D12F3002B9CF0 /* AppDelegate.swift in Sources */,
 				353829FC2B4D1347002B9CF0 /* ViewController.swift in Sources */,
 				35382A022B4D1347002B9CF0 /* PrintLog.swift in Sources */,
+				35382A052B4D189E002B9CF0 /* OTPViewModel.swift in Sources */,
 				353829A52B4D12F3002B9CF0 /* SceneDelegate.swift in Sources */,
 				35382A002B4D1347002B9CF0 /* AlertHelper.swift in Sources */,
+				35D35BFE2B4D3F25008D6662 /* DashboardViewModel.swift in Sources */,
+				35D35C002B4D5375008D6662 /* DepartmentDetailsViewController.swift in Sources */,
+				35382A072B4D1E6C002B9CF0 /* InfoViewController.swift in Sources */,
+				35D35C162B4D5A91008D6662 /* DPDConstants.swift in Sources */,
 				353829E62B4D133D002B9CF0 /* Constants.swift in Sources */,
+				35B96B962B4EC27A008D80C0 /* Camera.swift in Sources */,
 				353829EC2B4D133D002B9CF0 /* View+Extension.swift in Sources */,
 				35382A012B4D1347002B9CF0 /* Validate.swift in Sources */,
+				35382A0A2B4D1FA4002B9CF0 /* InfoTableViewCell.swift in Sources */,
 				353829FD2B4D1347002B9CF0 /* OTPViewController.swift in Sources */,
+				35B96B9E2B4ED8D7008D80C0 /* PopUpPresentationController.swift in Sources */,
 				353829EB2B4D133D002B9CF0 /* AppStoryboard.swift in Sources */,
+				35D35BFB2B4D3D10008D6662 /* DepartementCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -585,19 +789,25 @@
 		};
 		353829CD2B4D12F4002B9CF0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A94769ED20BBFD94CD0B3AC /* Pods-wrd.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XNBXMXSDDD;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = wrd/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera access";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Location Manager would like to access your location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Location Manager would like to access your location";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -613,19 +823,25 @@
 		};
 		353829CE2B4D12F4002B9CF0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 914367A33886B17747A36F58 /* Pods-wrd.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XNBXMXSDDD;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = wrd/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera access";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Location Manager would like to access your location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Location Manager would like to access your location";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

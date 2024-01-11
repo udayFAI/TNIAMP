@@ -56,4 +56,12 @@ extension UIViewController {
         loginVC.modalTransitionStyle   = .crossDissolve
         self.present(loginVC, animated: true, completion: nil)
     }
+    
+    func showDepartmentDetails(name: String) {
+        let detailsVC = DepartmentDetailsViewController.instantiate(fromAppStoryboard: .Main)
+        detailsVC.departmentName = name
+        detailsVC.modalPresentationStyle = .overCurrentContext
+        detailsVC.modalTransitionStyle   = .crossDissolve
+        self.present(detailsVC, animated: true, completion: nil)
+    }
 }
