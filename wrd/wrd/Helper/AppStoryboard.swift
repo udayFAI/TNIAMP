@@ -57,9 +57,10 @@ extension UIViewController {
         self.present(loginVC, animated: true, completion: nil)
     }
     
-    func showDepartmentDetails(name: String) {
+    func showDepartmentDetails(name: String, id: Int) {
         let detailsVC = DepartmentDetailsViewController.instantiate(fromAppStoryboard: .Main)
         detailsVC.departmentName = name
+        detailsVC.deptSelectionID = id
         detailsVC.modalPresentationStyle = .overCurrentContext
         detailsVC.modalTransitionStyle   = .crossDissolve
         self.present(detailsVC, animated: true, completion: nil)

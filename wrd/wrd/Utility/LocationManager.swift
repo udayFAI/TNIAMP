@@ -21,12 +21,12 @@ final class LocationManager: NSObject {
     }
     
     typealias LocationClosure = ((_ location:CLLocation?,_ error: NSError?)->Void)
-    private var locationCompletionHandler: LocationClosure?
+    var locationCompletionHandler: LocationClosure?
     
     typealias ReverseGeoLocationClosure = ((_ location:CLLocation?, _ placemark:CLPlacemark?,_ error: NSError?)->Void)
     private var geoLocationCompletionHandler: ReverseGeoLocationClosure?
     
-    private var locationManager:CLLocationManager?
+    var locationManager:CLLocationManager?
     
     var locationAccuracy = kCLLocationAccuracyBest
     

@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
       //  print(WRD_Schema.root)
+        viewModel.delegate = self
         mobileTextField.delegate = self
         verifyButtonOutlet.corner(radius: 10.0)
     }
@@ -26,8 +27,12 @@ class ViewController: UIViewController {
         guard let text = mobileTextField.text, !text.isEmpty, viewModel.isMobileStatus() else {
             AlertHelper.showAlert(title: StaticString.alertTitle, message: "Please enter phone number", viewController: self)
             return  }
-        // TODO: API Manager.
-        showOTPVC()
+        MRActivityIndicatorView.shared.show()
+        GlobalData.shared.phone = text
+        let parameters: [String: String] = ["phone":text,
+                                            "message":"OTPis",
+                                            "digits":"4"]
+        viewModel.userSignIn(parameters)
     }
 }
 
@@ -54,5 +59,16 @@ extension ViewController: UITextFieldDelegate {
             PrintLog.error("Failure")
         }
         return viewModel.textFieldCharactersValidate(text: newText)
+    }
+}
+
+extension ViewController: OTPGeneratorDelegate {
+    func failureOTP(status: Bool) {
+        MRActivityIndicatorView.shared.hide()
+        AlertHelper.showAlert(title: StaticString.alertTitle, message: "Try again after some time", viewController: self)
+    }
+    func responseOTP(response: OTPGenerate) {
+        MRActivityIndicatorView.shared.hide()
+        showOTPVC()
     }
 }

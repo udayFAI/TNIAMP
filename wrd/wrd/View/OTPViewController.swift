@@ -14,8 +14,11 @@ class OTPViewController: UIViewController {
     
     var viewModel = OTPViewModel()
     var isStatusOTP = false
+    var otp : Int?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        viewModel.delegate = self
         otpTextField.delegate = self
         confirmButtonOutlet.corner(radius: 10.0)
         // Do any additional setup after loading the view.
@@ -30,9 +33,16 @@ class OTPViewController: UIViewController {
         guard let text = otpTextField.text, !text.isEmpty, isStatusOTP else {
             AlertHelper.showAlert(title: StaticString.alertTitle, message: "Please enter 4 digit OTP", viewController: self)
             return  }
-        // TODO: API Manager.
-        AppUserDefaults.SharedInstance.isStatusLoginOut = true
-        showDashboardVC()
+//        guard GlobalData.shared.otp == Int(text) else {
+//            AlertHelper.showAlert(title: StaticString.alertTitle, message: "Entered OTP is Invalid", viewController: self)
+//            return
+//        }
+        // TODO: API Manager.phone=9629195152&otp=1591
+        MRActivityIndicatorView.shared.show()
+        let parameters: [String: String] = ["phone":GlobalData.shared.phone,
+                                            "otp":text]
+        viewModel.userOTPValidate(parameters)
+       
     }
     
     /*
@@ -70,5 +80,21 @@ extension OTPViewController: UITextFieldDelegate {
             PrintLog.error("OTP Failure")
         }
         return viewModel.validate.calculateTotalDigits(text: newText, maxLength: 4)
+    }
+}
+
+extension OTPViewController: OTPValidatorDelegate {
+    func failureOTP(status: Bool) {
+        MRActivityIndicatorView.shared.hide()
+        AlertHelper.showAlert(title: StaticString.alertTitle, message: "Try again after sometime", viewController: self)
+    }
+    func responseOTP(response: OTPValidate) {
+        guard response.responseMessage?.result == nil else {
+            AlertHelper.showAlert(title: StaticString.alertTitle, message: response.responseMessage?.result ?? "", viewController: self)
+            return }
+        GlobalData.shared.deptID = response.responseMessage?.lineDept ?? 0
+        MRActivityIndicatorView.shared.hide()
+        AppUserDefaults.SharedInstance.isStatusLoginOut = true
+        showDashboardVC()
     }
 }

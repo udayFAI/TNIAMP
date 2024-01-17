@@ -25,10 +25,12 @@ class DashboardViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+      //  Loader.shared.show()
+        MRActivityIndicatorView.shared.show()
         LocationManager.shared.setupLocationManager()
-        CameraPermisson.sharedInstance.checkPermissionForCamera { isAuthorized in
-            
-        }
+        CameraPermisson.sharedInstance.checkPermissionForCamera { isAuthorized in }
+        viewModel.delegate = self
+        updateUI()
         // Do any additional setup after loading the view.
     }
     
@@ -53,6 +55,10 @@ class DashboardViewController: UIViewController {
         departmentView.isScrollEnabled = true
         departmentView.bounces = true
         departmentView.translatesAutoresizingMaskIntoConstraints = false
+    }
+    
+    func updateUI() {
+        viewModel.multipleAPICallHandler()
     }
     
     @IBAction func buttonHandler(_ sender: UIButton) {
@@ -130,6 +136,9 @@ extension DashboardViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: DepartementCollectionViewCell.identiifer, for: indexPath) as? DepartementCollectionViewCell else {
             return DepartementCollectionViewCell()}
+        if GlobalData.shared.deptID == indexPath.row || GlobalData.shared.deptID == 9 {
+            cell.isUserInteractionEnabled = true
+        } 
         cell.setupUI(text: viewModel.departmentNames[indexPath.item], image: viewModel.departmentLogos[indexPath.item])
         return cell
     }
@@ -141,7 +150,7 @@ extension DashboardViewController: UICollectionViewDelegate {
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        showDepartmentDetails(name: viewModel.departmentNames[indexPath.item])
+        showDepartmentDetails(name: viewModel.departmentNames[indexPath.item], id: indexPath.item + 1)
     }
 }
 
@@ -160,5 +169,11 @@ extension DashboardViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 20
+    }
+}
+
+extension DashboardViewController: dropDownResponseDelegate {
+    func dropDownData() {
+        MRActivityIndicatorView.shared.hide()
     }
 }
